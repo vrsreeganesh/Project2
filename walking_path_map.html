@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cea3c2b52ae6d417d75cf415a07dcd2c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cea3c2b52ae6d417d75cf415a07dcd2c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cea3c2b52ae6d417d75cf415a07dcd2c = L.map(
+                "map_cea3c2b52ae6d417d75cf415a07dcd2c",
+                {
+                    center: [42.373465, -71.1189467],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_763bee391f3d48561a85b03679b8376e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_763bee391f3d48561a85b03679b8376e.addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+    
+            var marker_103617b4c8dcc57b914ff2a33f2c9bb7 = L.marker(
+                [42.373465, -71.1189467],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_649fab62099b0d9d059788bd95c94f96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_103617b4c8dcc57b914ff2a33f2c9bb7.setIcon(icon_649fab62099b0d9d059788bd95c94f96);
+        
+    
+        var popup_8f50cdd968bedbaa0adacda543cdafc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab7ab4725d0204e2849b6a4c5af476c1 = $(`<div id="html_ab7ab4725d0204e2849b6a4c5af476c1" style="width: 100.0%; height: 100.0%;">Start Location</div>`)[0];
+                popup_8f50cdd968bedbaa0adacda543cdafc2.setContent(html_ab7ab4725d0204e2849b6a4c5af476c1);
+            
+        
+
+        marker_103617b4c8dcc57b914ff2a33f2c9bb7.bindPopup(popup_8f50cdd968bedbaa0adacda543cdafc2)
+        ;
+
+        
+    
+    
+            var poly_line_b90e2f68b33e3ff7f1d091a9a5650c8a = L.polyline(
+                [[42.37338, -71.11903], [42.37339, -71.11907], [42.37335, -71.11909], [42.37337, -71.11917], [42.3734, -71.11919], [42.37343, -71.1192], [42.37343, -71.11925], [42.37337, -71.1194], [42.37334, -71.11982], [42.37332, -71.11999], [42.37323, -71.12045], [42.37319, -71.12066], [42.37318, -71.12071], [42.37309, -71.12078], [42.37306, -71.1208], [42.37306, -71.12088], [42.37312, -71.12084], [42.37315, -71.12082], [42.37314, -71.12085], [42.37307, -71.12102], [42.37291, -71.12129], [42.3729, -71.12122], [42.37285, -71.12127], [42.37283, -71.12129], [42.37284, -71.12136], [42.37266, -71.1215], [42.37259, -71.12155], [42.37246, -71.12165], [42.37236, -71.12176], [42.37234, -71.12175], [42.37231, -71.12172], [42.37221, -71.1219], [42.37219, -71.12189], [42.3723, -71.12211], [42.37229, -71.12217], [42.37232, -71.12224], [42.37242, -71.1225], [42.37254, -71.12279], [42.37254, -71.12281], [42.37254, -71.12281], [42.37237, -71.12238], [42.37229, -71.12217], [42.37226, -71.12201], [42.3722, -71.12192], [42.37229, -71.12176], [42.37231, -71.12172], [42.37234, -71.12175], [42.37236, -71.12176], [42.37246, -71.12165], [42.37259, -71.12155], [42.37284, -71.12136], [42.37281, -71.12108], [42.37276, -71.12076], [42.37259, -71.12035], [42.37256, -71.12028], [42.37253, -71.1203], [42.37246, -71.12012], [42.37248, -71.12011], [42.37234, -71.1197], [42.37223, -71.11943], [42.37221, -71.11943], [42.37218, -71.11934], [42.37219, -71.11932], [42.37227, -71.11925], [42.37225, -71.11915], [42.37219, -71.119], [42.37213, -71.11878], [42.37207, -71.11863], [42.37208, -71.11859], [42.37204, -71.11844], [42.37183, -71.11757], [42.37168, -71.11706], [42.37165, -71.11696], [42.37167, -71.11694], [42.37165, -71.11685], [42.37156, -71.11645], [42.37145, -71.11601], [42.37153, -71.11592], [42.3716, -71.11583], [42.37142, -71.11546], [42.37127, -71.11504], [42.37098, -71.11434], [42.37096, -71.1142], [42.37073, -71.11391], [42.37083, -71.11378], [42.37084, -71.1138], [42.37086, -71.11378], [42.37091, -71.11385], [42.371, -71.11374], [42.371, -71.11374], [42.37123, -71.11343], [42.37131, -71.11337], [42.37183, -71.1131], [42.3719, -71.11336], [42.37215, -71.11323], [42.37262, -71.11298], [42.373, -71.11281], [42.37346, -71.11258], [42.37375, -71.11244], [42.37372, -71.11235], [42.37359, -71.11202], [42.37373, -71.11193], [42.37369, -71.11183], [42.37374, -71.11179], [42.37378, -71.11174], [42.37383, -71.11164], [42.37389, -71.11157], [42.37398, -71.1115], [42.37408, -71.11144], [42.37412, -71.11139], [42.37418, -71.11139], [42.37428, -71.11139], [42.37433, -71.11134], [42.37438, -71.11109], [42.3744, -71.11101], [42.37456, -71.11087], [42.37462, -71.11088], [42.37467, -71.11089], [42.37471, -71.11091], [42.37493, -71.11116], [42.37498, -71.11118], [42.37501, -71.11118], [42.375, -71.1111], [42.37496, -71.111], [42.375, -71.11099], [42.3751, -71.11097], [42.3751, -71.11102], [42.37556, -71.11092], [42.37556, -71.11092], [42.37513, -71.11102], [42.37514, -71.11113], [42.37515, -71.11116], [42.3752, -71.11166], [42.37521, -71.11196], [42.37528, -71.11236], [42.37532, -71.11266], [42.37534, -71.11265], [42.37536, -71.11278], [42.37534, -71.11278], [42.37533, -71.11289], [42.3754, -71.11323], [42.37544, -71.11341], [42.37548, -71.11368], [42.37552, -71.11399], [42.37557, -71.11422], [42.37558, -71.11426], [42.37558, -71.11436], [42.3756, -71.11441], [42.37563, -71.11443], [42.37568, -71.1145], [42.37566, -71.11456], [42.37566, -71.11468], [42.37569, -71.11476], [42.3757, -71.11496], [42.37573, -71.11534], [42.37579, -71.11588], [42.37585, -71.11627], [42.37579, -71.11642], [42.37566, -71.1167], [42.37537, -71.11679], [42.37538, -71.11687], [42.37532, -71.11695], [42.37513, -71.11731], [42.375, -71.11757], [42.37492, -71.11767], [42.37487, -71.11775], [42.37471, -71.11781], [42.37457, -71.11785], [42.37442, -71.11789], [42.37437, -71.1179], [42.37438, -71.11798], [42.37434, -71.11806], [42.37432, -71.11814], [42.37432, -71.11824], [42.37418, -71.11828], [42.37413, -71.1185], [42.37384, -71.11857], [42.37382, -71.11868], [42.37381, -71.11875], [42.37378, -71.11876], [42.37373, -71.11876], [42.37369, -71.11876], [42.37366, -71.11892], [42.3735, -71.11884]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var marker_de938cddec0d49b84fc05f227b1d801a = L.marker(
+                [42.3722922, -71.1229792],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_179be19266725f95a0f92a9fdae484c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_de938cddec0d49b84fc05f227b1d801a.setIcon(icon_179be19266725f95a0f92a9fdae484c5);
+        
+    
+        var popup_84338dfcf57587e22e990a1b50dccf0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c2ef90faab5ab4de1b72a923466606a = $(`<div id="html_0c2ef90faab5ab4de1b72a923466606a" style="width: 100.0%; height: 100.0%;">The Charles Hotel</div>`)[0];
+                popup_84338dfcf57587e22e990a1b50dccf0f.setContent(html_0c2ef90faab5ab4de1b72a923466606a);
+            
+        
+
+        marker_de938cddec0d49b84fc05f227b1d801a.bindPopup(popup_84338dfcf57587e22e990a1b50dccf0f)
+        ;
+
+        
+    
+    
+            var marker_0f913da21559d8877ea4170f76ab1967 = L.marker(
+                [42.37106500000001, -71.1138201],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_87b66c3a7248b24b2bf5836c79165d3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0f913da21559d8877ea4170f76ab1967.setIcon(icon_87b66c3a7248b24b2bf5836c79165d3d);
+        
+    
+        var popup_144fd9379c90cd6f52ebf1ec1aeca4a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce7502d9b5c33cc2314f5f3ea377fd02 = $(`<div id="html_ce7502d9b5c33cc2314f5f3ea377fd02" style="width: 100.0%; height: 100.0%;">Hotel Veritas</div>`)[0];
+                popup_144fd9379c90cd6f52ebf1ec1aeca4a8.setContent(html_ce7502d9b5c33cc2314f5f3ea377fd02);
+            
+        
+
+        marker_0f913da21559d8877ea4170f76ab1967.bindPopup(popup_144fd9379c90cd6f52ebf1ec1aeca4a8)
+        ;
+
+        
+    
+    
+            var marker_8d57643e84e1ce9c08915cdabc6bc5f5 = L.marker(
+                [42.3755397, -71.1107601],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_d90302f9b6708641138326094e0adc8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8d57643e84e1ce9c08915cdabc6bc5f5.setIcon(icon_d90302f9b6708641138326094e0adc8e);
+        
+    
+        var popup_a7e04b3ad699ad089a2adae6ad2d8ed9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7494f39c1de4ea41542245d717a60974 = $(`<div id="html_7494f39c1de4ea41542245d717a60974" style="width: 100.0%; height: 100.0%;">Irving House at Harvard</div>`)[0];
+                popup_a7e04b3ad699ad089a2adae6ad2d8ed9.setContent(html_7494f39c1de4ea41542245d717a60974);
+            
+        
+
+        marker_8d57643e84e1ce9c08915cdabc6bc5f5.bindPopup(popup_a7e04b3ad699ad089a2adae6ad2d8ed9)
+        ;
+
+        
+    
+    
+            var marker_1b337817e1fa76c66ad5c69051b83428 = L.marker(
+                [42.3752641, -71.11082619999999],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_5f70de4a9820bc8aef9bbc83da7c9839 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b337817e1fa76c66ad5c69051b83428.setIcon(icon_5f70de4a9820bc8aef9bbc83da7c9839);
+        
+    
+        var popup_abcf7000e1f159a535eef11d7c360d69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cdff27cb83053f09b6afb609552e1610 = $(`<div id="html_cdff27cb83053f09b6afb609552e1610" style="width: 100.0%; height: 100.0%;">A Friendly Inn At Harvard</div>`)[0];
+                popup_abcf7000e1f159a535eef11d7c360d69.setContent(html_cdff27cb83053f09b6afb609552e1610);
+            
+        
+
+        marker_1b337817e1fa76c66ad5c69051b83428.bindPopup(popup_abcf7000e1f159a535eef11d7c360d69)
+        ;
+
+        
+    
+    
+            var marker_1e6ec5ce6af33da2c3f62b69f1019a63 = L.marker(
+                [42.37266280000001, -71.1221448],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_edbefb4e8986a620a884040b43be23ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1e6ec5ce6af33da2c3f62b69f1019a63.setIcon(icon_edbefb4e8986a620a884040b43be23ec);
+        
+    
+        var popup_7e24fcb921f2e00761eaaef693dc281f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22c4f4fb7f79937e1e7ed7241a4e5f39 = $(`<div id="html_22c4f4fb7f79937e1e7ed7241a4e5f39" style="width: 100.0%; height: 100.0%;">Harvard Square Hotel</div>`)[0];
+                popup_7e24fcb921f2e00761eaaef693dc281f.setContent(html_22c4f4fb7f79937e1e7ed7241a4e5f39);
+            
+        
+
+        marker_1e6ec5ce6af33da2c3f62b69f1019a63.bindPopup(popup_7e24fcb921f2e00761eaaef693dc281f)
+        ;
+
+        
+    
+    
+            var marker_cad4cc0c2267296309736aa75f9d1d64 = L.marker(
+                [42.3744368, -71.1182488],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_5fa2a39e8fe65db482fe200084813238 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cad4cc0c2267296309736aa75f9d1d64.setIcon(icon_5fa2a39e8fe65db482fe200084813238);
+        
+    
+        var popup_14cfea3870c947114accfa56f858461c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b136951d43f72512639d06f6027a86c = $(`<div id="html_3b136951d43f72512639d06f6027a86c" style="width: 100.0%; height: 100.0%;">Harvard University</div>`)[0];
+                popup_14cfea3870c947114accfa56f858461c.setContent(html_3b136951d43f72512639d06f6027a86c);
+            
+        
+
+        marker_cad4cc0c2267296309736aa75f9d1d64.bindPopup(popup_14cfea3870c947114accfa56f858461c)
+        ;
+
+        
+    
+    
+            var marker_2122170d9fdcf301a75e8b37955d5213 = L.marker(
+                [42.3784629, -71.1155576],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_568e9561914d0cfee3fe7eef66582ab0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2122170d9fdcf301a75e8b37955d5213.setIcon(icon_568e9561914d0cfee3fe7eef66582ab0);
+        
+    
+        var popup_931d07f7522ddecd39de67f21aa65aea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ecd1628819b5b3c5d8cc5c89dfa05bd = $(`<div id="html_5ecd1628819b5b3c5d8cc5c89dfa05bd" style="width: 100.0%; height: 100.0%;">The Harvard Museum of Natural History</div>`)[0];
+                popup_931d07f7522ddecd39de67f21aa65aea.setContent(html_5ecd1628819b5b3c5d8cc5c89dfa05bd);
+            
+        
+
+        marker_2122170d9fdcf301a75e8b37955d5213.bindPopup(popup_931d07f7522ddecd39de67f21aa65aea)
+        ;
+
+        
+    
+    
+            var marker_3c251ba5b61bd29ae1bb91d5152dd6d1 = L.marker(
+                [42.3735927, -71.1213969],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_9acc4e2e67831373cf78f9ea76e7e122 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3c251ba5b61bd29ae1bb91d5152dd6d1.setIcon(icon_9acc4e2e67831373cf78f9ea76e7e122);
+        
+    
+        var popup_d00998e37de8d336e5edabcbbadc6948 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab43478ca7f13919517e1e2eea3de422 = $(`<div id="html_ab43478ca7f13919517e1e2eea3de422" style="width: 100.0%; height: 100.0%;">The Brattle Theatre</div>`)[0];
+                popup_d00998e37de8d336e5edabcbbadc6948.setContent(html_ab43478ca7f13919517e1e2eea3de422);
+            
+        
+
+        marker_3c251ba5b61bd29ae1bb91d5152dd6d1.bindPopup(popup_d00998e37de8d336e5edabcbbadc6948)
+        ;
+
+        
+    
+    
+            var marker_10f68a122ab09d718a8fd04ee2f2dd77 = L.marker(
+                [42.37240190000001, -71.12265570000001],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_b011bb638ee437fa174e60b252b4ae08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_10f68a122ab09d718a8fd04ee2f2dd77.setIcon(icon_b011bb638ee437fa174e60b252b4ae08);
+        
+    
+        var popup_755fe65d70e0dc32b33100d7d285d2bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbb79af454556fc77b972ce344615647 = $(`<div id="html_fbb79af454556fc77b972ce344615647" style="width: 100.0%; height: 100.0%;">Noir</div>`)[0];
+                popup_755fe65d70e0dc32b33100d7d285d2bf.setContent(html_fbb79af454556fc77b972ce344615647);
+            
+        
+
+        marker_10f68a122ab09d718a8fd04ee2f2dd77.bindPopup(popup_755fe65d70e0dc32b33100d7d285d2bf)
+        ;
+
+        
+    
+    
+            var marker_54fe3e04dd992013083818add82f776c = L.marker(
+                [42.3784622, -71.1192282],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_a79e327334989844a65677a723a0c74c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_54fe3e04dd992013083818add82f776c.setIcon(icon_a79e327334989844a65677a723a0c74c);
+        
+    
+        var popup_9d7e18be5ac1f2d049fb8fb16543ef3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_160410b69e0c9ea56dbbe7070cfa9197 = $(`<div id="html_160410b69e0c9ea56dbbe7070cfa9197" style="width: 100.0%; height: 100.0%;">Harvard Law School</div>`)[0];
+                popup_9d7e18be5ac1f2d049fb8fb16543ef3c.setContent(html_160410b69e0c9ea56dbbe7070cfa9197);
+            
+        
+
+        marker_54fe3e04dd992013083818add82f776c.bindPopup(popup_9d7e18be5ac1f2d049fb8fb16543ef3c)
+        ;
+
+        
+    
+    
+            var marker_a6561affa8257e3860c028b784b0d3e4 = L.marker(
+                [42.373158, -71.11945899999999],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_ea4637fa62b68346921fcd0222cae929 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a6561affa8257e3860c028b784b0d3e4.setIcon(icon_ea4637fa62b68346921fcd0222cae929);
+        
+    
+        var popup_2b8401b525fc2f6d515d511ea4e30dff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bfe1bdfb4d35f32306f1b20a9bc3459 = $(`<div id="html_5bfe1bdfb4d35f32306f1b20a9bc3459" style="width: 100.0%; height: 100.0%;">Russell House Tavern</div>`)[0];
+                popup_2b8401b525fc2f6d515d511ea4e30dff.setContent(html_5bfe1bdfb4d35f32306f1b20a9bc3459);
+            
+        
+
+        marker_a6561affa8257e3860c028b784b0d3e4.bindPopup(popup_2b8401b525fc2f6d515d511ea4e30dff)
+        ;
+
+        
+    
+    
+            var marker_3a9aa19848368a1efdac919f28c43477 = L.marker(
+                [42.3739749, -71.1205932],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_37260ba31277ba941a422feec2685b82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3a9aa19848368a1efdac919f28c43477.setIcon(icon_37260ba31277ba941a422feec2685b82);
+        
+    
+        var popup_7f00e8d504529b19727cb5d3de091989 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_463132f27fdd1b064b23815e4dad0e5d = $(`<div id="html_463132f27fdd1b064b23815e4dad0e5d" style="width: 100.0%; height: 100.0%;">The Sinclair</div>`)[0];
+                popup_7f00e8d504529b19727cb5d3de091989.setContent(html_463132f27fdd1b064b23815e4dad0e5d);
+            
+        
+
+        marker_3a9aa19848368a1efdac919f28c43477.bindPopup(popup_7f00e8d504529b19727cb5d3de091989)
+        ;
+
+        
+    
+    
+            var marker_8608667fbfbd2b0a97859e164e0264db = L.marker(
+                [42.3772651, -71.1233101],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_4b9027c99407f05657d76748b03ab201 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8608667fbfbd2b0a97859e164e0264db.setIcon(icon_4b9027c99407f05657d76748b03ab201);
+        
+    
+        var popup_724a62c5b55ebef27a632cfb7d294b6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab06457b7a52c283aaefdcfee7122d18 = $(`<div id="html_ab06457b7a52c283aaefdcfee7122d18" style="width: 100.0%; height: 100.0%;">Sheraton Commander Hotel</div>`)[0];
+                popup_724a62c5b55ebef27a632cfb7d294b6e.setContent(html_ab06457b7a52c283aaefdcfee7122d18);
+            
+        
+
+        marker_8608667fbfbd2b0a97859e164e0264db.bindPopup(popup_724a62c5b55ebef27a632cfb7d294b6e)
+        ;
+
+        
+    
+    
+            var marker_d7ac2d0f235321965264a5352ad563b0 = L.marker(
+                [42.3689582, -71.1232042],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_b9f963dd5ea466cfd49f2b05c6f32849 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d7ac2d0f235321965264a5352ad563b0.setIcon(icon_b9f963dd5ea466cfd49f2b05c6f32849);
+        
+    
+        var popup_eb9ac2aa653036a7c280c718d1796048 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55c651ceb6b7aca0e2e3381f8ea19b4e = $(`<div id="html_55c651ceb6b7aca0e2e3381f8ea19b4e" style="width: 100.0%; height: 100.0%;">Anderson Memorial Bridge</div>`)[0];
+                popup_eb9ac2aa653036a7c280c718d1796048.setContent(html_55c651ceb6b7aca0e2e3381f8ea19b4e);
+            
+        
+
+        marker_d7ac2d0f235321965264a5352ad563b0.bindPopup(popup_eb9ac2aa653036a7c280c718d1796048)
+        ;
+
+        
+    
+    
+            var marker_ea39aac6ffe43b611ee7e026a16e5479 = L.marker(
+                [42.3722974, -71.1232471],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_2e0b3a9d06f4142623199261ee9b2cb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ea39aac6ffe43b611ee7e026a16e5479.setIcon(icon_2e0b3a9d06f4142623199261ee9b2cb7);
+        
+    
+        var popup_071632f0c459acffd2a24d71a7f56c08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b79ff81b097c4ea579b9625529c36f24 = $(`<div id="html_b79ff81b097c4ea579b9625529c36f24" style="width: 100.0%; height: 100.0%;">Henrietta's Table</div>`)[0];
+                popup_071632f0c459acffd2a24d71a7f56c08.setContent(html_b79ff81b097c4ea579b9625529c36f24);
+            
+        
+
+        marker_ea39aac6ffe43b611ee7e026a16e5479.bindPopup(popup_071632f0c459acffd2a24d71a7f56c08)
+        ;
+
+        
+    
+    
+            var marker_fbfdf94ab8fe4c15ab2cd9568d786532 = L.marker(
+                [42.37179400000001, -71.12099289999999],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_f122c80b519bb67ca3ba409667835ce9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fbfdf94ab8fe4c15ab2cd9568d786532.setIcon(icon_f122c80b519bb67ca3ba409667835ce9);
+        
+    
+        var popup_869b065529e81e4b76e24619cd8fbb5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb359982939564a9c3082923fa2c2041 = $(`<div id="html_bb359982939564a9c3082923fa2c2041" style="width: 100.0%; height: 100.0%;">Grafton Street Pub & Grill</div>`)[0];
+                popup_869b065529e81e4b76e24619cd8fbb5f.setContent(html_bb359982939564a9c3082923fa2c2041);
+            
+        
+
+        marker_fbfdf94ab8fe4c15ab2cd9568d786532.bindPopup(popup_869b065529e81e4b76e24619cd8fbb5f)
+        ;
+
+        
+    
+    
+            var marker_9eaf0f1598d6c264015a90884a286c8f = L.marker(
+                [42.3745154, -71.1214778],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_6291646553327029ab49520821780c18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9eaf0f1598d6c264015a90884a286c8f.setIcon(icon_6291646553327029ab49520821780c18);
+        
+    
+        var popup_66e15410883a93077e6320779301ee32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_305c75bf9eddc574ba0bf5a70af3eb74 = $(`<div id="html_305c75bf9eddc574ba0bf5a70af3eb74" style="width: 100.0%; height: 100.0%;">Harvard Extension School</div>`)[0];
+                popup_66e15410883a93077e6320779301ee32.setContent(html_305c75bf9eddc574ba0bf5a70af3eb74);
+            
+        
+
+        marker_9eaf0f1598d6c264015a90884a286c8f.bindPopup(popup_66e15410883a93077e6320779301ee32)
+        ;
+
+        
+    
+    
+            var marker_972cae41e5605d0008fa3a8caaf16ba3 = L.marker(
+                [42.37367990000001, -71.12187410000001],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_3414a3b6628ab09ef34345513b73180f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_972cae41e5605d0008fa3a8caaf16ba3.setIcon(icon_3414a3b6628ab09ef34345513b73180f);
+        
+    
+        var popup_bc2cdc9984efc6aecf39a74c2efd9847 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73b22765dea361cbaf5392c89ca9016d = $(`<div id="html_73b22765dea361cbaf5392c89ca9016d" style="width: 100.0%; height: 100.0%;">Harvest</div>`)[0];
+                popup_bc2cdc9984efc6aecf39a74c2efd9847.setContent(html_73b22765dea361cbaf5392c89ca9016d);
+            
+        
+
+        marker_972cae41e5605d0008fa3a8caaf16ba3.bindPopup(popup_bc2cdc9984efc6aecf39a74c2efd9847)
+        ;
+
+        
+    
+    
+            var marker_c52971b13c56c8d6269c62b304de7437 = L.marker(
+                [42.3655147, -71.1221412],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_18539ecbff0b1d3d4d8fad76dc257980 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c52971b13c56c8d6269c62b304de7437.setIcon(icon_18539ecbff0b1d3d4d8fad76dc257980);
+        
+    
+        var popup_55de2fc45d7dbd3b0b666c9c4a3e893d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ee32eff7239efb1aee5bb456465fb6d = $(`<div id="html_6ee32eff7239efb1aee5bb456465fb6d" style="width: 100.0%; height: 100.0%;">Harvard Business School</div>`)[0];
+                popup_55de2fc45d7dbd3b0b666c9c4a3e893d.setContent(html_6ee32eff7239efb1aee5bb456465fb6d);
+            
+        
+
+        marker_c52971b13c56c8d6269c62b304de7437.bindPopup(popup_55de2fc45d7dbd3b0b666c9c4a3e893d)
+        ;
+
+        
+    
+    
+            var marker_272defb526715c8bee74b0bdaf421084 = L.marker(
+                [42.369814, -71.1128793],
+                {}
+            ).addTo(map_cea3c2b52ae6d417d75cf415a07dcd2c);
+        
+    
+            var icon_b0dd255b4dcdff357f2efa9af7878388 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_272defb526715c8bee74b0bdaf421084.setIcon(icon_b0dd255b4dcdff357f2efa9af7878388);
+        
+    
+        var popup_716796d9e47413d6f7d692e287d0536e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4b468cc46b4e1c280aed8e9bafe0230 = $(`<div id="html_a4b468cc46b4e1c280aed8e9bafe0230" style="width: 100.0%; height: 100.0%;">Pyara Spa and Salon</div>`)[0];
+                popup_716796d9e47413d6f7d692e287d0536e.setContent(html_a4b468cc46b4e1c280aed8e9bafe0230);
+            
+        
+
+        marker_272defb526715c8bee74b0bdaf421084.bindPopup(popup_716796d9e47413d6f7d692e287d0536e)
+        ;
+
+        
+    
+</script>
+</html>
