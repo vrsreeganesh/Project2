@@ -2,6 +2,7 @@
 Use Google Maps API to use implement a mini-project. In this project, given the current location and time you can walk, this app produces a path that you can walk along that shows some popular spots while returning to the starting point within the time constraint. 
 
 Product Mission Statement:
+
 To empower users with moments of discovery and connection by providing a seamless and personalized experience through our app. We aim to simplify urban exploration, ensuring that every journey, no matter how brief, becomes an opportunity to uncover popular and hidden gems within a specified timeframe. By curating paths enriched with local favorites, our mission is to enhance the way users navigate their surroundings, fostering a deeper connection to their environment and promoting a sense of adventure in the everyday.
 
 User Stories:
