@@ -17,7 +17,9 @@ To empower users with moments of discovery and connection by providing a seamles
 10. As a group of friends planning a spontaneous outing, we want to collectively input our desired timeframe of 1.5 hours into the app and receive a suggested route with popular spots for a memorable gathering.
 11. As an art enthusiast, I want to input 1 hour into the app and discover a path that takes me to nearby galleries and street art locations, enriching my cultural experience.
 12. As a nature lover seeking a short escape, I want to input 45 minutes into the app and receive a path that leads me to scenic viewpoints and tranquil parks within walking distance.
-   
+
+
+### Demo
 Following shows how it would look if we were in Harvard square and entered a time period of 20 minutes
 
 <img width="829" alt="Screenshot 2023-11-22 at 18 13 53" src="https://github.com/vrsreeganesh/Project2/assets/90840253/8cbec66a-f2a1-4d50-a707-26fadc70106b">
